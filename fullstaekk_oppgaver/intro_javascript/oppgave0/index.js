@@ -34,7 +34,6 @@ const createListElements = () => {
       list.appendChild(li);
     });
   };
-
   printList.addEventListener("click", createListElements)
 
 
@@ -84,3 +83,13 @@ const handleBtnChange = () => {
 responsiveField.addEventListener("keyup", handleBtnChange)
 
 // Oppgave 8
+const colorize = document.getElementById("color")
+const wordList = document.getElementsByClassName("children")
+
+
+
+const handleColorize = () => {
+  console.log(wordList)
+}
+
+colorize.addEventListener("click", handleColorize)
