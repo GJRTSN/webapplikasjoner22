@@ -24,7 +24,18 @@ textInput.addEventListener("keyup", function (e) {
 
 // Oppgave 4
 const myList = ["item one", "item two", "item three"];
+const list = document.getElementById("ul")
+const printList = document.getElementById("write-list")
 
+const createListElements = () => {
+    myList.forEach((word) => {
+      const li = document.createElement('li');
+      li.innerHTML = word;
+      list.appendChild(li);
+    });
+  };
+
+  printList.addEventListener("click", createListElements)
 
 
 // Oppgave 5
