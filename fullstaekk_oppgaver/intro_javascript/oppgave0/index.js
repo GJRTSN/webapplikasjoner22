@@ -39,6 +39,8 @@ const createListElements = () => {
 
 
 // Oppgave 5
+
+
 // Oppgave 6
 // Oppgave 7
 // Oppgave 8
