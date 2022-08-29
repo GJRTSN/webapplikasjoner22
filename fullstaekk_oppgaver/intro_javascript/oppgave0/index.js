@@ -39,8 +39,30 @@ const createListElements = () => {
 
 
 // Oppgave 5
+const createBtn = document.getElementById("create")
+const styleSelect = document.getElementById("select")
+const printText = document.getElementById("placeholder")
+const inputField = document.querySelector("#text")
+
+const handleChange = () => {
+  textStyle = styleSelect.value
+  writtenText = inputField.value
+}
+
+const createSelectedElement = () => {
+  const textTag = document.createElement(textStyle);
+  textTag.innerHTML = writtenText;
+  printText.appendChild(textTag)
+}
+
+inputField.addEventListener("keyup", handleChange)
+styleSelect.addEventListener("change", handleChange)
+createBtn.addEventListener("click", createSelectedElement)
+handleChange()
 
 
 // Oppgave 6
+
+
 // Oppgave 7
 // Oppgave 8
