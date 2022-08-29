@@ -62,7 +62,25 @@ handleChange()
 
 
 // Oppgave 6
+const eraseBtn = document.getElementById("remove-li")
+const elementList = document.getElementById("list")
 
+const handleRemove = () => {
+    elementList.removeChild(elementList.firstElementChild)
+} 
+eraseBtn.addEventListener("click", handleRemove)
 
 // Oppgave 7
+const responsiveField = document.getElementById("name")
+const responsiveBtn =  document.getElementById("order")
+
+const handleBtnChange = () => {
+  inputCharacters = responsiveField.value
+ if (inputCharacters.length > 4) {
+  responsiveBtn.style.border = "1px solid red"
+  responsiveBtn.disabled = true;
+ }
+}
+responsiveField.addEventListener("keyup", handleBtnChange)
+
 // Oppgave 8
