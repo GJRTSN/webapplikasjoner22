@@ -92,4 +92,4 @@ const handleColorize = () => {
   console.log(wordList)
 }
 
-colorize.addEventListener("click", handleColorize)
+colorize.addEventListener("click", handleColorize) . 
