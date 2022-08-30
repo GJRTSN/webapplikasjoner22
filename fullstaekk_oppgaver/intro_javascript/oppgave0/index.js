@@ -84,12 +84,14 @@ responsiveField.addEventListener("keyup", handleBtnChange)
 
 // Oppgave 8
 const colorize = document.getElementById("color")
-const wordList = document.getElementsByClassName("children")
-
-const testList = wordList.children
+const wordList = document.querySelectorAll('.children li');
+const wordArray = Array.from(wordList);
 
 const handleColorize = () => {
-  console.log(testList)
-}
-
+  wordArray[0].style.border = "2px solid green"
+  wordArray[1].style.border = "2px solid pink"
+  wordArray[2].style.border = "2px solid green"
+  wordArray[3].style.border = "2px solid pink"
+  wordArray[4].style.border = "2px solid green"
+};
 colorize.addEventListener("click", handleColorize)
