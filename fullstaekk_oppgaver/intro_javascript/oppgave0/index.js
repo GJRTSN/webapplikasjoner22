@@ -86,10 +86,10 @@ responsiveField.addEventListener("keyup", handleBtnChange)
 const colorize = document.getElementById("color")
 const wordList = document.getElementsByClassName("children")
 
-
+const testList = wordList.children
 
 const handleColorize = () => {
-  console.log(wordList)
+  console.log(testList)
 }
 
-colorize.addEventListener("click", handleColorize) . 
+colorize.addEventListener("click", handleColorize)
